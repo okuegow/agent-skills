@@ -1,0 +1,24 @@
+{
+  "phase": "neu",
+  "erstellt": "",
+  "letzter_lauf": "",
+  "artikel": {
+    "bezeichnung": "",
+    "marke": "",
+    "modell": "",
+    "specs": [],
+    "zustand": ""
+  },
+  "kategorie": "",
+  "artikelmerkmale": {},
+  "fotos": [],
+  "preis_history": [],
+  "preisvorschlag": {
+    "wert_eur": null,
+    "begruendung": ""
+  },
+  "titel": "",
+  "text": "",
+  "listing_url": "",
+  "live_history": []
+}

@@ -1,0 +1,11 @@
+{
+  "ebay_benutzername": "",
+  "standort_plz": "",
+  "versandart": "",
+  "versandkosten_eur": null,
+  "ruecknahme": false,
+  "ruecknahme_frist_tage": 0,
+  "bearbeitungszeit_tage": 1,
+  "verkaufsformat_default": "sofort_kauf",
+  "tonfall": "verkaufsstark aber ehrlich"
+}
