@@ -1,0 +1,22 @@
+{
+  "name": "agent-skills",
+  "owner": {
+    "name": "Oliver Kuegow"
+  },
+  "metadata": {
+    "description": "A collection of skills for Claude Code.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ebay-seller",
+      "description": "Guides the complete eBay.de selling process per item: identify, price research, photo prep, listing, monitoring. Never publishes without approval.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Oliver Kuegow"
+      },
+      "category": "automation",
+      "source": "./plugins/ebay-seller"
+    }
+  ]
+}

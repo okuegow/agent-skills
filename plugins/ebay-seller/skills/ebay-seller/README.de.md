@@ -10,9 +10,12 @@ Begleitet den kompletten eBay.de-Verkauf: Foto rein → Artikel erkennen → Ver
 - Läuft auf **macOS und Windows**. Nichts Kompliziertes nachzuinstallieren.
 
 ## Installation
-Den Ordner `ebay-seller/` hierhin kopieren:
-- **macOS/Linux:** `~/.claude/skills/ebay-seller/`
-- **Windows:** `%USERPROFILE%\.claude\skills\ebay-seller\`
+**Am einfachsten — sag es Claude Code:** „Füge den Marketplace `okuegow/agent-skills` hinzu und installiere `ebay-seller`." Oder tippe:
+```bash
+claude plugin marketplace add okuegow/agent-skills
+claude plugin install ebay-seller@agent-skills
+```
+**Manuelle Alternative:** diesen `ebay-seller/`-Ordner nach `~/.claude/skills/` (macOS/Linux) bzw. `%USERPROFILE%\.claude\skills\` (Windows) kopieren.
 
 Claude Code neu starten (oder neue Session). Fertig.
 

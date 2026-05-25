@@ -1,0 +1,19 @@
+{
+  "name": "ebay-seller",
+  "version": "1.0.0",
+  "description": "Guides the complete eBay.de selling process per item: identify, price research, photo prep, listing, monitoring. Never publishes without approval.",
+  "author": {
+    "name": "Oliver Kuegow"
+  },
+  "homepage": "https://github.com/okuegow/agent-skills/tree/main/plugins/ebay-seller",
+  "repository": "https://github.com/okuegow/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "ebay",
+    "selling",
+    "marketplace",
+    "automation",
+    "claude-in-chrome",
+    "germany"
+  ]
+}

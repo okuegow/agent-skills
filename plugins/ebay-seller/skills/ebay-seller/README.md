@@ -10,9 +10,12 @@ Guides the complete eBay.de sale: photo in → identify item → comparable pric
 - Runs on **macOS and Windows**. Nothing complicated to install.
 
 ## Installation
-Copy the `ebay-seller/` folder here:
-- **macOS/Linux:** `~/.claude/skills/ebay-seller/`
-- **Windows:** `%USERPROFILE%\.claude\skills\ebay-seller\`
+**Easiest — tell Claude Code:** "Add the marketplace `okuegow/agent-skills` and install `ebay-seller`." Or run:
+```bash
+claude plugin marketplace add okuegow/agent-skills
+claude plugin install ebay-seller@agent-skills
+```
+**Manual alternative:** copy this `ebay-seller/` folder into `~/.claude/skills/` (macOS/Linux) or `%USERPROFILE%\.claude\skills\` (Windows).
 
 Restart Claude Code (or start a new session). Done.
 
