@@ -1,26 +1,28 @@
-# eBay-Seller — Skill für Claude Code
+> 🌐 **English** · [Deutsch](README.de.md)
 
-Begleitet den kompletten eBay.de-Verkauf: Foto rein → Artikel erkennen → Vergleichspreise → Foto/Text/Preis vorbereiten → Anzeige ausfüllen → beobachten. Du behältst die Kontrolle: **veröffentlicht wird nie ohne deine Freigabe.**
+# eBay-Seller — a Claude Code skill
 
-## Voraussetzungen
-- **Pflicht:** Claude Code + die Erweiterung **„Claude in Chrome"**, und ein Chrome, in dem du bei **eBay.de eingeloggt** bist.
-- **Optional:** Python 3 + `Pillow` für automatische Foto-Aufbereitung. **Ohne läuft alles trotzdem** — dann nimmst du die Fotos unbearbeitet.
-- Läuft auf **macOS und Windows**. Nichts Kompliziertes nachzuinstallieren.
+Guides the complete eBay.de sale: photo in → identify item → comparable prices → prepare photo/text/price → fill the listing → monitor. You stay in control: **nothing is published without your approval.** Listings are written in German for eBay.de.
+
+## Requirements
+- **Required:** Claude Code + the **"Claude in Chrome"** extension, and a Chrome where you are **logged in to eBay.de**.
+- **Optional:** Python 3 + `Pillow` for automatic photo enhancement. **Everything still works without it** — you then use the photos unedited.
+- Runs on **macOS and Windows**. Nothing complicated to install.
 
 ## Installation
-Den Ordner `ebay-seller/` hierhin kopieren:
+Copy the `ebay-seller/` folder here:
 - **macOS/Linux:** `~/.claude/skills/ebay-seller/`
 - **Windows:** `%USERPROFILE%\.claude\skills\ebay-seller\`
 
-Claude Code neu starten (oder neue Session). Fertig.
+Restart Claude Code (or start a new session). Done.
 
-## Benutzung
-- Ein **Produktfoto** in den Chat ziehen und z. B. „**auf eBay stellen**" schreiben, **oder** den Befehl **`/ebay-seller`** tippen.
-- Beim ersten Mal fragt der Skill kurz deine Verkäufer-Defaults ab (PLZ, Versand, Rücknahme …) und legt `ebay/config.json` an.
-- Danach führt er dich Phase für Phase: erkennen → Preise → fertig machen → einstellen → beobachten.
+## Usage
+- Drag a **product photo** into the chat and write e.g. "**sell on eBay**", **or** type the command **`/ebay-seller`**.
+- On first use the skill briefly asks for your seller defaults (ZIP, shipping, returns …) and creates `ebay/config.json`.
+- After that it guides you phase by phase: identify → prices → finalize → list → monitor.
 
-## Gut zu wissen
-- **Fotos hochladen** musst du selbst (Drag & Drop in eBay) — automatische Datei-Uploads sind vom Browser aus Sicherheitsgründen gesperrt.
-- **Einstellen/Veröffentlichen** klickst du selbst — der Skill füllt alles aus und hält davor an.
-- **Login** machst du selbst in Chrome (kein Passwort im Chat).
-- Daten liegen in `ebay/items/<artikel>/` (Stand pro Artikel) und `ebay/config.json`.
+## Good to know
+- **You upload the photos yourself** (drag & drop into eBay) — automatic file uploads are blocked by the browser for security reasons.
+- **You click publish yourself** — the skill fills everything in and stops before that.
+- **You log in yourself** in Chrome (no password in chat).
+- Data lives in `ebay/items/<item>/` (per-item state) and `ebay/config.json`.

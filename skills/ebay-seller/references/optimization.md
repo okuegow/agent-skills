@@ -1,35 +1,35 @@
-# Verkaufsoptimierung (eBay.de)
+# Sales optimization (eBay.de)
 
-Hebel, um Sichtbarkeit (Cassini-Ranking), Klickrate und Verkaufspreis zu erhöhen. Bei jedem Artikel in `fertig_machen`/`einstellen` prüfen und passend anwenden.
+Levers to increase visibility (Cassini ranking), click-through, and sale price. Check at each item in `fertig_machen`/`einstellen` and apply where it fits.
 
 ## Timing
-- **Bester Endzeitpunkt: Sonntagabend 19–22 Uhr (DE-Zeit)** — meiste aktive Käufer/Bieter.
-- Auktionen: **10 Tage, Start Donnerstag** → deckt zwei Wochenenden ab, endet Sonntag.
-- Gilt vor allem für Auktionen. Bei Festpreis weniger kritisch, aber Einstellen am Wochenende erhöht initiale Sichtbarkeit.
+- **Best end time: Sunday evening 19:00–22:00 (local DE time)** — most active buyers/bidders.
+- Auctions: **10 days, start Thursday** → covers two weekends, ends Sunday.
+- Matters mostly for auctions. For fixed price less critical, but listing on the weekend boosts initial visibility.
 
-## Format wählen
-- **Festpreis (Sofort-Kaufen) + Preisvorschlag** ist für die meisten Gebrauchtartikel die sicherste Wahl: kein Auktions-Preisrisiko, fängt aber Verhandler.
-- **Auktion nur**, wenn echter Bietdruck/Seltenheit vorliegt. Vorher in `preis_history` prüfen: Liefen vergleichbare Auktionen deutlich niedriger aus als Festpreise? → dann Festpreis.
-- Preisvorschlag mit **Mindestannahme** (auto-Ablehnung darunter) steuern, z. B. ~80 % des Zielpreises.
-- Preis knapp unter runder Marke (z. B. 29/32 statt 30/35).
+## Choose format
+- **Fixed price (Sofort-Kaufen) + best offer (Preisvorschlag)** is the safest choice for most used items: no auction price risk, but captures negotiators.
+- **Auction only** if there is genuine bidding pressure/rarity. Check `preis_history` first: did comparable auctions end clearly lower than fixed prices? → then fixed price.
+- Steer best offers with an auto-decline minimum (`Mindestbetrag`), e.g. ~80% of the target price.
+- Price just under a round mark (e.g. 29/32 instead of 30/35).
 
-## Titel (Cassini-SEO)
-- **Alle 80 Zeichen nutzen**, echte Suchbegriffe, kein Keyword-Spam.
-- Begriffe aus eBay-Suchvorschlägen + erfolgreichen verkauften Artikeln übernehmen.
-- Synonyme & alternative Modellbezeichnungen einbauen (z. B. Gerätenummer **und** Verpackungsnummer, Marke, Einsatzzweck, Farbe, "OVP").
+## Title (Cassini SEO)
+- **Use all 80 characters**, real search terms, no keyword spam.
+- Take terms from eBay search suggestions + successful sold listings.
+- Include synonyms & alternative model designations (e.g. device number **and** box number, brand, use case, color, "OVP").
 
-## Fotos
-- Gute Fotos verkaufen deutlich häufiger (Faustregel bis ~5×).
-- **Hauptbild = das Produkt selbst** (sauber, weißer/neutraler Hintergrund), nicht die Verpackung — höhere Klickrate.
-- Mehrere Winkel + Detail-/Zustandsfotos; bei OVP zusätzlich ein Verpackungsfoto.
+## Photos
+- Good photos sell markedly more often (rule of thumb up to ~5×).
+- **Main image = the product itself** (clean, white/neutral background), not the packaging — higher click-through.
+- Multiple angles + detail/condition shots; for boxed items add a packaging photo.
 
-## Artikelmerkmale
-- **Vollständigkeit rankt höher.** Auch optionale Specifics (z. B. Verfolgungsmethode, Besonderheiten, Modell, Farbe) füllen.
+## Item specifics
+- **Completeness ranks higher.** Fill optional specifics too (e.g. tracking method, features, model, color).
 
-## Versand & Trust
-- **Kostenloser Versand** (Kosten einpreisen) verbessert Best-Match-Ranking und Klickrate — gegen sichtbare Versandkosten abwägen.
-- Kurze Bearbeitungszeit, gutes Verkäuferprofil (Top-Bewertung) = Sichtbarkeits-Bonus.
-- Ehrliche, vollständige Beschreibung senkt Retouren/Reklamationen.
+## Shipping & trust
+- **Free shipping** (price it in) improves Best-Match ranking and click-through — weigh against visible shipping cost.
+- Short handling time, good seller profile (top rating) = visibility bonus.
+- Honest, complete description lowers returns/complaints.
 
-## Reihenfolge im Skill
-Diese Optimierungen in `fertig_machen` als Vorschläge an den User bringen (Format, Preis/Preisvorschlag, Titel-Synonyme, Hauptbild, Free-Shipping-Option) und in `einstellen` umsetzen — nichts ohne Freigabe veröffentlichen.
+## Order in the skill
+Bring these optimizations as suggestions to the user in `fertig_machen` (format, price/best-offer, title synonyms, main image, free-shipping option) and apply them in `einstellen` — never publish without approval.

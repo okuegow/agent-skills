@@ -1,19 +1,19 @@
-# Preisrecherche (eBay.de)
+# Price research (eBay.de)
 
-## Datenquelle
-- **Verkaufte Artikel** (echte Verkaufspreise): eBay-Suche nach Bezeichnung → Filter „Verkaufte Artikel" aktivieren.
-- **Laufende Konkurrenz** (Marktdruck): aktuelle Angebote derselben Sache, Anzahl + Preisspanne.
+## Data source
+- **Sold items** (real selling prices): search eBay for the item name → enable the "Verkaufte Artikel" (sold items) filter.
+- **Active competition** (market pressure): current listings of the same thing, count + price range.
 
-## Auswertung
-- Pro Durchlauf erfassen: Titel, Endpreis, Datum, Zustand.
-- Median und Spanne der sold-Preise bilden; Ausreißer (anderer Zustand/Set) markieren, nicht einrechnen.
-- Eintrag in `preis_history`: `{ datum, sold_preise[], sold_median, sold_spanne, konkurrenz_anzahl, konkurrenz_preise[] }`.
-- Der vorgeschlagene Preis-Range meint **Sofort-Kauf-Preis** bzw. **Auktions-Startpreis** — bei Auktion ist das nicht der erwartete Endpreis.
+## Analysis
+- Per run capture: title, final price, date, condition.
+- Compute median and range of the sold prices; mark outliers (different condition/bundle), do not count them in.
+- Entry in `preis_history`: `{ datum, sold_preise[], sold_median, sold_spanne, konkurrenz_anzahl, konkurrenz_preise[] }`.
+- The suggested price range means the **fixed (Sofort-Kauf) price** resp. the **auction start price** — for an auction this is not the expected final price.
 
-## Robustheit / Account-Schutz (WICHTIG)
-- Max. **1 Recherche-Durchlauf pro Artikel pro Tag**, sequenziell (keine parallelen Tabs), mit menschenähnlichen Pausen.
-- Vor dem Schreiben prüfen: `already_ran_today` → wenn heute schon gelaufen, NICHT erneut erfassen.
-- Captcha / Login-Wall / 2FA → anhalten, User bitten es manuell zu lösen, dann fortsetzen.
-- Recherche fehlgeschlagen / keine Treffer → **kein** `preis_history`-Eintrag, Phase bleibt, Retry am Folgetag, dem User klar melden.
-- Schreiben am Ende des Laufs atomar über `state.save_state`, danach `state.mark_ran`.
-- Dauerhafter Bruch des sold-Filters → Ausweichweg eBay Browse-/Marketplace-Insights-API (out of scope v1, hier nur dokumentiert).
+## Robustness / account protection (IMPORTANT)
+- Max. **1 research run per item per day**, sequential (no parallel tabs), with human-like pauses.
+- Before writing, check: is `letzter_lauf` already today → if so, do NOT capture again.
+- Captcha / login wall / 2FA → stop, ask the user to resolve it manually, then continue.
+- Research failed / no hits → **no** `preis_history` entry, phase stays, retry next day, report clearly to the user.
+- Write at the end of the run atomically (single save), then set `letzter_lauf`.
+- If the sold filter breaks permanently → fall back to the official eBay Browse/Marketplace Insights API (out of scope for v1, documented here only).

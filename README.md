@@ -1,26 +1,28 @@
+> 🌐 **English** · [Deutsch](README.de.md)
+
 # Agent Skills
 
-Eine Sammlung von Skills für [Claude Code](https://claude.com/claude-code) — kleine, fokussierte Erweiterungen, die Claude für bestimmte Aufgaben befähigen.
+A collection of skills for [Claude Code](https://claude.com/claude-code) — small, focused extensions that enable Claude for specific tasks.
 
-## Enthaltene Skills
+## Included skills
 
-| Skill | Beschreibung |
-|-------|--------------|
-| [`ebay-seller`](skills/ebay-seller) | Begleitet den kompletten eBay.de-Verkaufsprozess pro Artikel: Foto → Artikel erkennen → Vergleichspreise → Foto/Text/Preis vorbereiten → Anzeige ausfüllen → beobachten. Veröffentlicht nie ohne Freigabe. |
+| Skill | Description |
+|-------|-------------|
+| [`ebay-seller`](skills/ebay-seller) | Guides the complete eBay.de selling process per item: photo → identify item → comparable prices → prepare photo/text/price → fill the listing → monitor. Never publishes without approval. |
 
 ## Installation
 
-Den gewünschten Skill-Ordner aus `skills/` in dein lokales Claude-Skills-Verzeichnis kopieren:
+Copy the desired skill folder from `skills/` into your local Claude skills directory:
 
 - **macOS / Linux:** `~/.claude/skills/`
 - **Windows:** `%USERPROFILE%\.claude\skills\`
 
-Danach Claude Code neu starten. Jeder Skill bringt eine eigene `README.md` mit Details mit.
+Then restart Claude Code. Each skill ships its own `README.md` with details.
 
-## Voraussetzungen
+## Requirements
 
-Variiert je Skill — siehe die jeweilige `README.md`. Die meisten brauchen nur Claude Code selbst; optionale Extras (z. B. Python-Bibliotheken) sind dort vermerkt.
+Vary per skill — see the respective `README.md`. Most need only Claude Code itself; optional extras (e.g. Python libraries) are noted there.
 
-## Lizenz
+## License
 
 [MIT](LICENSE) © 2026 Oliver Kuegow

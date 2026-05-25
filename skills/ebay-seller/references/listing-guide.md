@@ -1,27 +1,29 @@
-# Listing-Leitfaden
+# Listing guide
 
-## Titel (max. 80 Zeichen)
-- Marke + Modell + Kerneigenschaft + Zustand, suchstark.
-- Keine Spam-Zeichen, keine erfundenen Attribute.
-- Beispiel: „Nikon AF-S 50mm f/1.8G Festbrennweite Vollformat – sehr guter Zustand".
+Write the actual title and description **in German** (eBay.de buyers).
 
-## Verkaufstext (`listing.md` aus Template)
-- Aufmacher: 1–2 Sätze Nutzen/Highlight.
-- Zustand ehrlich beschreiben (inkl. sichtbarer Gebrauchsspuren).
-- Eigenschaften als Stichpunkte (aus `artikel.specs`).
-- Lieferumfang exakt.
-- Versand/Abholung aus `config.json`.
-- Tonfall aus `config.tonfall` (Default: verkaufsstark aber ehrlich).
+## Title (max. 80 characters)
+- Brand + model + key feature + condition, search-strong.
+- No spam characters, no invented attributes.
+- Example: „Nikon AF-S 50mm f/1.8G Festbrennweite Vollformat – sehr guter Zustand".
 
-## Pflichtfelder beim Einstellen
-Ohne diese lässt eBay nicht veröffentlichen:
-- **Kategorie** (`state.kategorie`)
-- **Artikelmerkmale / item specifics** (`state.artikelmerkmale`) — kategorieabhängig pflichtig
-- **Zustand**
-- **Bilder:** alle `photos/enhanced-N.jpg` hochladen, erstes = Hauptbild
-- **Versandprofil** (aus `config.json`)
-- Preis (Sofort-Kauf) bzw. Startpreis (Auktion), Format aus `config.verkaufsformat_default`
-Fehlt etwas → beim User nachfragen, NICHT erfinden.
+## Description (`listing.md` from template)
+- Opening: 1–2 sentences on benefit/highlight.
+- Describe the condition honestly (including visible wear).
+- Features as bullet points (from `artikel.specs`).
+- Exact scope of delivery.
+- Shipping/pickup from `config.json`.
+- Tone from `config.tonfall` (default: strong-selling but honest).
 
-## Optimierung
-Vor dem Einstellen die Hebel aus `optimization.md` prüfen: 80-Zeichen-Titel mit Synonymen, Hauptbild = Produkt (nicht Verpackung), vollständige Artikelmerkmale, Format-/Preisvorschlag-Strategie, optional kostenloser Versand, Timing (So-Abend). Als Vorschläge an den User, dann umsetzen.
+## Required fields when listing
+Without these eBay will not publish:
+- **Category** (`state.kategorie`)
+- **Item specifics** (`state.artikelmerkmale`) — category-dependent, mandatory
+- **Condition**
+- **Images:** upload all `photos/enhanced-N.jpg` (or originals), first = main image
+- **Shipping profile** (from `config.json`)
+- Price (fixed) resp. start price (auction), format from `config.verkaufsformat_default`
+If something is missing → ask the user, do NOT invent it.
+
+## Optimization
+Before listing, apply the levers from `optimization.md`: 80-character title with synonyms, main image = product (not the box), complete item specifics, format/best-offer strategy, optional free shipping, timing (Sunday evening). Present as suggestions to the user, then apply.

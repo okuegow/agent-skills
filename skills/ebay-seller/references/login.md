@@ -1,20 +1,20 @@
 # Login (eBay.de)
 
-## Standard: manueller Login (plattformunabhängig, keine Installation)
-1. Prüfen, ob der User in Chrome bei eBay eingeloggt ist (Signed-in-Indikator im Header).
-2. Wenn nicht: den User bitten, sich **selbst in Chrome bei eBay einzuloggen**, dann fortfahren.
-3. Bei 2FA / Geräte-Verifizierung / Captcha: anhalten, der User erledigt es, dann weiter.
+## Default: manual login (cross-platform, no installation)
+1. Check whether the user is logged in to eBay in Chrome (signed-in indicator in the header).
+2. If not: ask the user to **log in to eBay in Chrome themselves**, then continue.
+3. On 2FA / device verification / captcha: stop, the user handles it, then continue.
 
-Das ist der empfohlene Weg — funktioniert auf macOS und Windows, ohne Passwort im Chat und ohne Setup.
+This is the recommended path — works on macOS and Windows, without a password in chat and without setup.
 
-## Sicherheit (nicht verhandelbar)
-- Niemals ein Passwort abfragen, anzeigen, loggen oder in `config.json`/`state.json` schreiben.
-- Anmeldung immer durch den User selbst.
+## Security (non-negotiable)
+- Never ask for, display, log, or write a password into `config.json`/`state.json`.
+- Sign-in is always done by the user.
 
-## Optional (nur macOS): Auto-Login via Keychain
-Wer mag, kann das Passwort einmalig im macOS-Keychain hinterlegen, damit der Skill Benutzernamen + Passwort beim Login einträgt:
+## Optional (macOS only): auto-login via Keychain
+If desired, the password can be stored once in the macOS Keychain so the skill fills username + password at login:
 
-    security add-generic-password -s ebay-seller -a "<benutzername>" -w   # einmalig, durch den User
-    security find-generic-password -s ebay-seller -a "<benutzername>" -w  # Abruf zur Laufzeit
+    security add-generic-password -s ebay-seller -a "<username>" -w   # once, by the user
+    security find-generic-password -s ebay-seller -a "<username>" -w  # retrieve at runtime
 
-`ebay_benutzername` dann in `config.json`. Bei 2FA/Captcha trotzdem anhalten. Auf Windows nicht verfügbar — dort den manuellen Login nutzen.
+Set `ebay_benutzername` in `config.json`. Still stop on 2FA/captcha. Not available on Windows — use the manual login there.

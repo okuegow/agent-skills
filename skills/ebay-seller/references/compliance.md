@@ -1,16 +1,16 @@
-# Compliance & Account-Schutz
+# Compliance & account protection
 
-## Bilder
-- Nur echte Fotos des Artikels. Erlaubt: Zuschnitt, Begradigung, Licht/Weißabgleich, weißer Hintergrund/Freisteller.
-- VERBOTEN in diesem Skill: Mängel wegretuschieren (Kratzer, Flecken, Gebrauchsspuren), generierte/fremde Produktbilder.
+## Images
+- Only real photos of the item. Allowed: crop, straighten, lighting/white balance, white background/cutout.
+- FORBIDDEN in this skill: retouching defects (scratches, stains, wear), generated/foreign product images.
 
-## Listing & Automatisierung
-- Nie ohne explizite Freigabe des Users veröffentlichen.
-- Live-Preisänderungen und Gegenangebote nur nach expliziter Freigabe.
-- Keine irreführenden Titel/Beschreibungen, keine Keyword-Spam.
+## Listing & automation
+- Never publish without the user's explicit approval.
+- Live price changes and counter-offers only after explicit approval.
+- No misleading titles/descriptions, no keyword spam.
 
-## Recherche
-- Sold-Daten nur gedrosselt abrufen (siehe price-research.md). Bei Captcha-Häufung pausieren.
+## Research
+- Fetch sold data only throttled (see price-research.md). On repeated captchas, pause.
 
-## Verantwortung
-Der Verkäufer (User) bleibt verantwortlich für Richtlinienkonformität. Im Zweifel: anhalten und fragen.
+## Responsibility
+The seller (user) remains responsible for policy compliance. When in doubt: stop and ask.

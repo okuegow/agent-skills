@@ -1,17 +1,17 @@
-# Artikel-Erkennung
+# Item identification
 
-Ziel: aus dem Foto eine eindeutige, verkaufsfähige Artikelidentität ableiten.
+Goal: derive a clear, sellable item identity from the photo.
 
-## Vorgehen
-1. Foto per Vision auswerten: Produkttyp, Marke, Modell/Variante, Farbe, sichtbarer Zustand, Beschriftungen/Logos/Typenschild.
-2. Genaue Bezeichnung + Specs per Websuche verifizieren (Herstellerseite, Datenblatt).
-3. eBay-Kategorie bestimmen und die kategorietypischen **Artikelmerkmale** notieren (z. B. Marke, Modell, Größe, Material, EAN, Zustand).
-4. Bei Unsicherheit (zwei plausible Modelle) GEZIELT nachfragen statt raten.
+## Procedure
+1. Analyze the photo with vision: product type, brand, model/variant, color, visible condition, labels/logos/type plate.
+2. Verify the exact name + specs via web search (manufacturer page, datasheet).
+3. Determine the eBay category and note the category-typical **item specifics** (`artikelmerkmale`, e.g. brand, model, size, material, EAN, condition).
+4. If unsure (two plausible models), ask the user SPECIFICALLY instead of guessing.
 
-## In `state.json` füllen
+## Fill into `state.json`
 - `artikel.bezeichnung`, `artikel.marke`, `artikel.modell`, `artikel.specs[]`, `artikel.zustand`
 - `kategorie`
-- `artikelmerkmale{}` so weit wie aus Foto + Recherche möglich (Rest vor dem Einstellen ergänzen)
+- `artikelmerkmale{}` as far as possible from photo + research (complete the rest before listing)
 
-## Zustands-Wortschatz (eBay)
-Neu · Neu (sonstige) · Generalüberholt · Gebraucht · Für Bastler/defekt. Zustand ehrlich am sichtbaren Foto festmachen.
+## Condition vocabulary (eBay)
+Use eBay's German condition labels: Neu · Neu (sonstige) · Generalüberholt · Gebraucht · Für Bastler/defekt. Base the condition honestly on what is visible in the photo.
