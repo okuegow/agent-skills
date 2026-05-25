@@ -13,7 +13,7 @@ Begleitet den kompletten eBay.de-Verkauf: Foto rein → Artikel erkennen → Ver
 **Am einfachsten — sag es Claude Code:** „Füge den Marketplace `okuegow/agent-skills` hinzu und installiere `ebay-seller`." Oder tippe:
 ```bash
 claude plugin marketplace add okuegow/agent-skills
-claude plugin install ebay-seller@agent-skills
+claude plugin install ebay-seller@okuegow-skills
 ```
 **Manuelle Alternative:** diesen `ebay-seller/`-Ordner nach `~/.claude/skills/` (macOS/Linux) bzw. `%USERPROFILE%\.claude\skills\` (Windows) kopieren.
 

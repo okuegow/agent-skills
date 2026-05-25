@@ -20,7 +20,7 @@ Claude führt die beiden Befehle für dich aus. Oder du tippst sie selbst:
 
 ```bash
 claude plugin marketplace add okuegow/agent-skills
-claude plugin install ebay-seller@agent-skills
+claude plugin install ebay-seller@okuegow-skills
 ```
 
 Danach Claude Code neu starten. Fertig — kein Dateien-Kopieren, keine Zusatz-Installation.

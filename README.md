@@ -20,7 +20,7 @@ Claude runs the two commands for you. Or run them yourself:
 
 ```bash
 claude plugin marketplace add okuegow/agent-skills
-claude plugin install ebay-seller@agent-skills
+claude plugin install ebay-seller@okuegow-skills
 ```
 
 Then restart Claude Code. That's it — no manual file copying, no extra installs.
